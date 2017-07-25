@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Creme Industrielle</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400" rel="stylesheet"> 
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="css/ghpages-materialize.css" rel="stylesheet" type="text/css" media="screen,projection">
+
+</head>
+<body>
+	<div class="navbar-fixed hide-on-med-and-down">
+		<nav class="primary-dark" role="navigation">
+			<div class="nav-wrapper container">
+			  <a id="logo-container" href="index.html" class="brand-logo center white-text">Logo</a>
+			  <ul class="hide-on-med-and-down right">
+				<li><a href="">Connexion</a></li>		
+			  </ul>		
+			</div>
+		</nav>
+	</div>
+	<div class="navbar hide-on-large-only">
+		<nav role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="index.html" class="brand-logo center white-text">Logo</a>
+				 
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="">Connexion</a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>	
+		</nav>
+	</div>
+	<div class="full-color primary center">	
+		<div class="container">
+			<div class="row">
+				<div class="col s12 center primary secondary-text">				
+					<h4>Décrivez votre projet</h4>					
+				</div>
+			</div>
+			<div  class="row" style="margin:0;padding-bottom: 30px;">
+				<form class="col s12 color-form">
+					<div class="row">
+						<div class="input-field col s12">
+						  <input id="project_title" type="text">
+						  <label for="project_title">Titre du Projet</label>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="input-field col s12">
+						  <textarea id="descr_breve" class="materialize-textarea" data-length="250"></textarea>
+						  <label for="descr_breve">Description brève</label>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col s12 center primary secondary-text">				
+							<h4>Apportez des précisions</h4>					
+						</div>
+					</div>
+			
+					<div class="row">
+						<div class="input-field col s12">
+						  <textarea id="descr_detail" class="materialize-textarea"></textarea>
+						  <label for="descr_detail">Description détaillée du projet</label>
+						</div>						
+					</div>
+					
+					<div class="row">
+						<div class="col s12 center primary secondary-text">				
+							<h4>Importez des pièces jointes</h4>					
+						</div>
+					</div>
+					<div class="row">
+						<form action="#">
+							<div class="file-field input-field">
+							  
+								<span>Fichiers complémentaires</span>
+								<input type="file" class="btn" multiple>
+							  
+							  <div class="file-path-wrapper">
+								<input class="file-path validate" type="text" placeholder="Télécharger un ou plusieurs fichiers (max 5)">
+							  </div>
+							</div>
+						 </form>
+					</div>
+					
+					<button class="btn waves-effect waves-light" type="submit" name="action">Soumettre le projet<i class="material-icons right">send</i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+		
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/fonctions.js"></script>
+  
+ </body>
+</html>

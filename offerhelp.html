@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Creme Industrielle</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400" rel="stylesheet"> 
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+	<div class="navbar-fixed hide-on-med-and-down">
+		<nav class="primary-dark" role="navigation">
+			<div class="nav-wrapper container">
+			  <a id="logo-container" href="index.html" class="brand-logo center white-text">Logo</a>
+			  <ul class="hide-on-med-and-down right">
+				<li><a href="">Connexion</a></li>		
+			  </ul>		
+			</div>
+		</nav>
+	</div>
+	<div class="navbar hide-on-large-only">
+		<nav role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="index.html" class="brand-logo center white-text">Logo</a>
+				 
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="">Connexion</a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>	
+		</nav>
+	</div>
+
+	<div class="xlarge-row primary">
+		<div class="container centrer center">	
+			<div class="row">
+				<div class="col s10 offset-s1 center secondary primary-text">				
+					<h4>Comment voulez-vous contribuer ?</h4>					
+				</div>
+			</div>
+			<div class="row">
+				<a href="#importPDF" class="btn-large btn-xl btns-line">Proposer un cours version PDF</a>
+				<a href="#writeHelper" class="btn-large btn-xl btns-line">Ecrire un formulaire de calcul</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="divider secondary" id="importPDF"></div>
+	
+	<div class="xlarge-row secondary">
+		<div class="container centrer center">
+			<div class="row">
+				<div class="col s10 offset-s1 center primary secondary-text">				
+					<h4>Importer un cours pour le partager</h4>					
+				</div>
+			</div>
+
+			<div class="divider secondary"></div>
+				
+			<div class="row">
+				<div class="col s10 offset-s1">
+					<form action="#">
+						<div class="file-field input-field">					  
+							<span>Cours ou document en version PDF</span>
+							<input type="file" class="btn">
+						  
+						  <div class="file-path-wrapper">
+							<input class="file-path validate" type="text" placeholder="Télécharger un cours ou un document PDF">
+						  </div>
+						</div>
+					</form>
+				</div>
+				
+				<div class="divider secondary"></div>
+				
+				<button class="btn btn-inv waves-effect waves-light" type="submit" name="action">Soumettre le cours<i class="material-icons right">send</i></button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="divider primary" id="writeHelper"></div>
+		
+	<div class="xlarge-row primary">
+		<div class="container centrer center">
+			<div class="row">
+				<div class="col s10 offset-s1 center secondary primary-text">				
+					<h4>Ecrire un formulaire de calcul pour aider au dimensionnement</h4>					
+				</div>
+			</div>
+
+			<div class="divider primary"></div>
+			
+			<div class="row">
+				<form action="#">
+					<div class="file-field input-field">					  
+						<span>Importer un schéma des données utiles</span>
+						<input type="file" class="btn">					  
+						<div class="file-path-wrapper">
+							<input class="file-path validate" type="text" placeholder="Télécharger une image">
+						</div>
+					</div>
+				</form>
+				<a class="btn btns-line" onclick="addInput()">Ajouter une entrée</a>
+				<a class="btn btns-line" onclick="delInput()">Supprimer une entrée</a>
+				<div class="row add-input">
+				</div>
+				
+
+				<div class="divider primary"></div>	
+				
+				<button class="btn waves-effect waves-light" type="submit" name="action">Soumettre le formulaire<i class="material-icons right">send</i></button>
+			</div>
+		</div>
+	</div>
+	
+		
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/fonctions.js"></script>
+  
+ </body>
+</html>
