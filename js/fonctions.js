@@ -87,6 +87,22 @@ function showHideSigninForms(id) {
 
 }
 
+function editProfil(){
+	$('.modifiable-section').wrap('<form class="col s12 color-form">');
+	var i  = 1;
+	$('.modifiable').each(function(){		
+		
+		$(this).after('<div class="row"><div class="input-field  secondary-text"><input name="edit_field_' + i + '" type="text" id="edit_field_' + i + '"><label for="edit_field_' + i + '" class="active">' + $(this).attr('id') + '</label></div></div><br>');
+		$('#edit_field_' + i).val($(this).text());
+		$(this).remove();
+		i += 1;
+	});
+	
+	$('img').after('<form action="#"><div class="file-field input-field"><span>' + '<img src="images/photoprofil.png" class="circle" height="200px" width="200px"/>' + '</span><input type="file" class="btn"></div></form>');
+	$('img:first').remove();
+	$('.modifiable-section').append('<div class="col m9 offset-m3 center"><button class="btn btnp-line waves-effect waves-light" type="submit" name="action">Confirmer les modifications<i class="material-icons right">send</i></button></div>');
+}
+
 $('a[href^="#"]').on('click', function(evt){
        evt.preventDefault(); 
        var target = $(this).attr('href');

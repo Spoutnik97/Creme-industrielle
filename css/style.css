@@ -215,4 +215,9 @@ option, select{
 
 .color-form .input-field{
 	border: 1px solid #fdd835 !important;
+	padding-left: 20px;
+}
+
+.row0{
+	margin:0;padding-bottom: 30px;
 }
