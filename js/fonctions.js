@@ -1,8 +1,4 @@
 
-$(document).ready(function() {
-    $('select').material_select();
-  });
-
  $(function() {
 	$(document).ready(function() {
 		
@@ -10,11 +6,24 @@ $(document).ready(function() {
 		$('.xlarge-row').css('width', $(window).width());
 		$('.full-color').css('min-height', $(window).height() + 'px');
 		
+		$(".dropdown-button").dropdown({ hover: true });
 		$('.collapsible').collapsible();
 		$('.chips').material_chip();
 		$('.side-list a').click(function(){
 			saddChip({tag: $(this).text()}, $('.chips'));
 			});
+		$('select').material_select();
+		
+		var scrollOption = [{selector: '#writeHelper', offset: 100, callback: function(el) {$('#help_input_button').fadeIn("slow"); }}]; 
+		Materialize.scrollFire(scrollOption); 
+		
+		$('.button-collapse').sideNav({
+		  menuWidth: 300, // Default is 300
+		  edge: 'right', // Choose the horizontal origin
+		  closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+		  draggable: true, // Choose whether you can drag to open on touch screens,
+		}
+  );
 	});
 }); 
 
@@ -52,7 +61,13 @@ function saddChip(elem, cible){
 
 function addInput(){
 	var nb = $('.added').length;
-	var input = $('<div class="input-field col s4 added" id="added' + nb + '"><input id="inputAdded' + nb + '" type="text"><label for="' + nb + '">Nom de la variable ' + nb +'</label></div>');
+	var input = $('<div class="input-field col s4 added" id="added' + nb + '" style="margin-top: 30px;"><input id="inputAdded' + nb + '" type="text"><label for="' + nb + '">Nom de la variable ' + nb +'</label></div>');
+	input.appendTo($('.add-input'));
+}
+
+function addInput_option(){
+	var nb = $('.added').length;
+	var input = $('<div class="input-field col s4 added" id="added' + nb + '" style="margin-top: 30px;"><input id="inputAdded_checkbox' + nb + '" type="text"><label for="inputAdded_checkbox' + nb + '">Question fermée à poser ' + nb +'</label></div>');
 	input.appendTo($('.add-input'));
 }
 
@@ -108,3 +123,10 @@ $('a[href^="#"]').on('click', function(evt){
        var target = $(this).attr('href');
        $('html, body').stop().animate({scrollTop: $(target).offset().top}, 1000 );
     });
+
+$('.top-nav-button').hover(
+	function(){$('.top-nav').slideDown("slow");});
+$('.top-nav').hover(
+	function(){$(this).css('display', 'block');},
+	function(){$(this).slideUp("slow");}
+	);

@@ -5197,7 +5197,7 @@ small {
 }
 
 .btn-floating:hover {
-  background-color: #ffeb3b;
+  /* background-color: #ffeb3b; */
 }
 
 .btn-floating:before {
@@ -5232,7 +5232,7 @@ small {
   width: inherit;
   display: inline-block;
   text-align: center;
-  color: #fff;
+  /* color: #fff; */
   font-size: 1.6rem;
   line-height: 40px;
 }

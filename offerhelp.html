@@ -14,6 +14,7 @@
 
 </head>
 <body>
+  
 	<div class="navbar-fixed hide-on-med-and-down">
 		<nav class="primary-dark" role="navigation">
 			<div class="nav-wrapper container">
@@ -71,7 +72,7 @@
 							<input type="file" class="btn">
 						  
 						  <div class="file-path-wrapper">
-							<input class="file-path validate" type="text" placeholder="Télécharger un cours ou un document PDF">
+							<input class="file-path validate" type="text">
 						  </div>
 						</div>
 					</form>
@@ -97,7 +98,7 @@
 			<div class="divider primary"></div>
 			
 			<div class="row">
-				<form action="#">
+				<form action="#" class="color-form">
 					<div class="file-field input-field">					  
 						<span>Importer un schéma des données utiles</span>
 						<input type="file" class="btn">					  
@@ -105,26 +106,53 @@
 							<input class="file-path validate" type="text" placeholder="Télécharger une image">
 						</div>
 					</div>
+
+					<br>
+					
+					<div class="row">
+						<a class="btn btns-line" onclick="addInput()">Ajouter une variable</a>
+						<a class="btn btns-line" onclick="addInput_option()">Ajouter une case à cocher</a>
+						<a class="btn btns-line" onclick="delInput()">Supprimer une entrée</a>
+					</div>
+					
+					<div class="row add-input">
+					</div>
+
+					<br>
+					
+					<div class="file-field input-field">					  
+						<span>Importer l'algorythme de calcul</span>
+						<input type="file" class="btn">					  
+						<div class="file-path-wrapper">
+							<input class="file-path validate" type="text" placeholder="Télécharger un fichier .txt, .js, .py, ...">
+						</div>
+					</div>
 				</form>
-				<a class="btn btns-line" onclick="addInput()">Ajouter une entrée</a>
-				<a class="btn btns-line" onclick="delInput()">Supprimer une entrée</a>
-				<div class="row add-input">
-				</div>
-				
 
 				<div class="divider primary"></div>	
 				
 				<button class="btn waves-effect waves-light" type="submit" name="action">Soumettre le formulaire<i class="material-icons right">send</i></button>
 			</div>
+			<div class="fixed-action-btn" id="help_input_button">
+				<a class="btn-floating btn-large button-collapse waves-effect secondary primary-text" data-activates="slide-help">
+				  <i class="large material-icons">help</i>
+				</a>
+		    </div>	
+			
+			<ul id="slide-help" class="side-nav">
+				<li>Appelle une variable déclarée par : $('#<b>nom_variable</b>')</li>
+				<li>Teste une condition par : If $('#<b>nom_caseACocher</b>') {<b>code de ta fonction javascript</b>}</li>
+				<li>Affiche une valeur avec la fonction : alert(<b>code à afficher</b>)</li>
+			  </ul>
+	
 		</div>
 	</div>
 	
-		
+	
   <!--  Scripts-->
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/fonctions.js"></script>
-  
  </body>
 </html>

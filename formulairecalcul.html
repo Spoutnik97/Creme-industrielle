@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Creme Industrielle</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400" rel="stylesheet"> 
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+	<div class="navbar-fixed hide-on-med-and-down">
+		<nav class="primary-dark" role="navigation">
+			<div class="nav-wrapper container">
+			  <a id="logo-container" href="index.html" class="brand-logo center white-text">Logo</a>
+			  <ul class="hide-on-med-and-down right">
+				<li><a href="profilpage.html">Connexion</a></li>		
+			  </ul>		
+			</div>
+		</nav>
+	</div>
+	<div class="navbar hide-on-large-only">
+		<nav role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="index.html" class="brand-logo center white-text">Logo</a>
+				 
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="">Connexion</a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>	
+		</nav>
+	</div>
+	
+	<div class="xlarge-row primary">
+		<div class="container centrer center">	
+			<div class="row">
+				<div class="col s12 m4">
+					<img src="schema/poutre_appui_simple.png"/>
+				</div>
+				<div class="col s12 m8 secondary-text">
+					<div class="input-field col s6">
+						  <input id="a" type="text" class="validate">
+						  <label for="a">Longueur de la poutre a (en m)</label>
+					</div>
+					<div class="input-field col s6">
+						  <input id="b" type="text" class="validate">
+						  <label for="b">Largeur de la poutre b (en m)</label>
+					</div>
+					<div class="input-field col s6">
+						  <input id="h" type="text" class="validate">
+						  <label for="h">Epaisseur de la poutre h (en m)</label>
+					</div>
+					<div class="input-field col s6">
+						  <input id="E" type="text" class="validate">
+						  <label for="E">Module d'Young E (en GPa)</label>
+					</div>
+				</div>
+				
+				<div class="">
+				<a class="btn-floating btn-large button-collapse waves-effect secondary primary-text right" data-activates="slide-help">
+				  <i class="large material-icons">help</i>
+				</a>
+		    </div>	
+			
+			<ul id="slide-help" class="side-nav">
+				<li>Appelle une variable déclarée par : $('#<b>nom_variable</b>')</li>
+				<li>Teste une condition par : If $('#<b>nom_caseACocher</b>') {<b>code de ta fonction javascript</b>}</li>
+				<li>Affiche une valeur avec la fonction : alert(<b>code à afficher</b>)</li>
+			  </ul>
+			</div>
+		</div>
+    </div>
+	
+		
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/fonctions.js"></script>
+  
+ </body>
+</html>

@@ -43,12 +43,11 @@ nav .brand-logo {
   color: #444;
 }
 
+nav ul li a{
+	color:white;
+}
 p {
   line-height: 2rem;
-}
-
-.button-collapse {
-  color: #26a69a;
 }
 
 .parallax-container {
@@ -220,4 +219,39 @@ option, select{
 
 .row0{
 	margin:0;padding-bottom: 30px;
+}
+
+#help_input_button{
+	display:none;
+}
+
+.top-nav{
+	position: absolute;
+	z-index: 999;
+	display: none;
+	background-color: #263238;
+	color: white;	
+	margin: 0 auto;
+}
+
+.top-nav a{
+	color: white;
+}
+
+.top-nav .divider{
+	height: 1px;
+	background-color: #fdd835;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+@media only screen and (min-width: 601px) {
+  .top-nav {
+    margin-left: 7.5%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .top-nav {
+   margin-left: 15%;
+  }
 }
