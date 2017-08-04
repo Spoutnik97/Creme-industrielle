@@ -80,13 +80,13 @@ footer.page-footer {
 	color: #263238;
 }
 .btnp-line{
-	background-color: #fdd835;
-	border: 2px solid #263238;
-	color: #263238;
+	background-color:#ff6542;
+	border: 2px solid #2a364c;
+	color: #2a364c;
 }
 .btnp-line:hover{
-	background-color: #263238;
-	color: #fdd835;
+	background-color: #2a364c;
+	color: #ff6542;
 }
 
 .btns-line{
@@ -230,4 +230,12 @@ option, select{
   .top-nav {
    margin-left: 15%;
   }
+}
+
+.sfullscreen{
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+
 }

@@ -2,7 +2,7 @@
  $(function() {
 	$(document).ready(function() {
 		
-		$('.xlarge-row').css('height', $(window).height() + 'px');
+		$('.xlarge-row').css('height', $(window).height());
 		$('.xlarge-row').css('width', $(window).width());
 		$('.full-color').css('min-height', $(window).height() + 'px');
 		
