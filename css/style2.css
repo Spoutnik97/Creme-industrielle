@@ -40,13 +40,13 @@
 	color: #6095F7;
 }
 .btn3-line{
-	background: #f4ebd9;
-	border: 2px solid #6095F7;
-	color: #6095F7;
+	background: #6095F7;
+	border: 2px solid #cff235;
+	color: #cff235;;
 }
 .btn3-line:hover{
-	background-color: #6095F7;
-	color: #f4ebd9;
+	background-color: #cff235;
+	color: #6095F7;
 }
 
 html{
