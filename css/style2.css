@@ -11,8 +11,46 @@
 .secondary-dark{ background-color: #d25539;}
 .secondary-dark-text, .sdt{ color: #d25539;}
 
+.bleu{ background: #6095F7;}
+.tbleu{ color: #6095F7;}
+.vert{ background: #cff235;}
+.tvert{ color: #cff235;}
+.beige{ background: #f4ebd9;}
+.tbeige{ color: #f4ebd9;}
+.marron{ background: #332e2a;}
+.tmarron{ color: #332e2a;}
+.color{background: #2252AA;}
+
+.btn-line{
+	background-color: #cff235;
+	color: #6095F7;
+	border: 2px solid #cff235;
+}
+.btn-line:hover{
+	background-color: #B5C615;
+	color: #6095F7;
+}
+
+.btn2-line{
+	background-color: #6095F7;
+	color: #cff235;
+}
+.btn2-line:hover{
+	background-color: #cff235;
+	color: #6095F7;
+}
+.btn3-line{
+	background: #f4ebd9;
+	border: 2px solid #6095F7;
+	color: #6095F7;
+}
+.btn3-line:hover{
+	background-color: #6095F7;
+	color: #f4ebd9;
+}
+
 html{
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 nav ul a,
 nav .brand-logo {
@@ -239,3 +277,5 @@ option, select{
 	left: 0;
 
 }
+
+
