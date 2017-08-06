@@ -17,18 +17,18 @@
 .tvert{ color: #cff235;}
 .beige{ background: #f4ebd9;}
 .tbeige{ color: #f4ebd9;}
-.marron{ background: #332e2a;}
+.marron{ background: #59504a;}
 .tmarron{ color: #332e2a;}
-.color{background: #2252AA;}
+.color{background: #ccb7a9;}
+.rouge{ background: #f94336;}
 
 .btn-line{
-	background-color: #cff235;
-	color: #6095F7;
-	border: 2px solid #cff235;
+	background-color: #f94336;
+	color: #59504a;
 }
 .btn-line:hover{
-	background-color: #B5C615;
-	color: #6095F7;
+	background-color: #59504a;
+	color: #f94336;
 }
 
 .btn2-line{
