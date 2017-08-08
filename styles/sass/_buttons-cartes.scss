@@ -1,0 +1,32 @@
+.btn, .btn-line, .btn-line-color{
+	margin-right: 20px;
+}
+
+.btn-line, .btn-line-color:focus{
+	@extend .btn;
+	background: none;
+	color: white;
+	border: 2px solid white;
+	margin-right: 20px;
+}
+.btn-line:hover{
+	background: none;
+	color: white;
+}
+
+.btn-line-color, .btn-line-color:focus{
+	@extend .btn;
+	background: none;
+	color: $color1;
+	border: 2px solid $color1;
+	margin-right: 20px;
+}
+.btn-line-color:hover{
+	background: darken(white, 5%);
+}
+
+.btn-xl{
+	height: 100px;
+	line-height: 100px;
+	margin: 56px;
+}
